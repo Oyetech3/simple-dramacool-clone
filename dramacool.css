@@ -1,0 +1,483 @@
+body {
+    width: 970px;
+    margin: auto;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.letters nav ul{
+    display: flex;
+    justify-content: space-between;
+ 
+}
+.letters nav ul li {
+   margin: auto;
+   background-color: rgba(128, 128, 128, 0.7);
+   height: 25px;
+   width: 3.45%;
+   cursor: pointer;
+}
+#home {
+    background-color: #fcc745;
+}
+.letters nav ul li:hover {
+    background-color: #fcc745;
+}
+.letters nav ul li a{
+    margin-left: 10px;
+    text-align: center;
+    font-size: 10px;
+    color: white;
+}
+#all {
+    margin-left: 5px;
+}
+.letters nav ul li:nth-child(11) {
+    width: 3.4%;
+}
+.logosection {
+    display: flex;
+    justify-content: space-between;
+    background-image: url(upperbg.jpg);
+    height: 70px;
+    padding-left: 55px;
+}
+.search {
+    margin-right: 75px;
+    margin-top: 25px;
+    position: relative;
+}
+.logosection img {
+    height: 45px;
+    margin-top: 18px;
+    margin-left: 7px;
+}
+.logosection .myp {
+    font-family: 'Sofia', sans-serif;
+    font-size: 20px;
+    margin-top: 25px;
+    letter-spacing: 4px;
+    padding-left: 15px;
+    color: #3ec2cf;
+}
+.search input {
+    width: 250px;
+    height: 27px;
+    padding-left: 70px;
+}
+.search select {
+    position: absolute;
+    top: 3px;
+    margin-left: 1px;
+    padding-left: 2px;
+    background-color: transparent;
+    box-shadow: 2px 2px 2px white ;
+    color: #3ec2cf;
+}
+input::placeholder {
+    font-size: 14px;
+    opacity: 0.6;
+}
+.search .icon {
+    background-color: #fcc745;
+    position: absolute;
+    bottom: 18px;
+    left: 89.9%;
+    width: 27px;
+    height: 27px;
+    text-align: center;
+}
+.search .icon i {
+    margin-top: 4px;
+    color: white;
+}
+.list nav ul {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto auto ;
+    gap: 0.7px;
+}
+.list nav ul li {
+    background-color: #3ec2cf;
+    height: 40px;
+    text-align: center;
+    padding-top: 10px;
+    color: white;
+    font-size: 15px;
+    font-weight: 200;
+    cursor: pointer;
+}
+.list nav ul li i {
+    font-size: 20px;
+}
+.list nav ul li:hover {
+    background-color: #fcc745;
+}
+.list nav ul .log:hover {
+    background-color: #3ec2cf;
+    color: #fcc745;
+}
+.list nav ul .firstlist ul{
+   display: flex;
+   flex-direction: column;
+   gap: 0 ;
+   background-color: white;
+   border-radius: 30px;
+   margin-top: 16px;
+   height: 15px;
+}
+.list nav ul .firstlist ul {
+    visibility: hidden;
+}
+.list nav ul .firstlist:hover .dramas {
+    visibility: visible;
+}
+.list nav ul .firstlist ul li {
+    background-color: white;
+    color: black;
+    margin: 0;
+    box-shadow: 0px 1px 1px black;
+    font-size: 13px;
+    padding-top: 5px;
+}
+
+.list nav ul .secondlist ul{
+    display: flex;
+    flex-direction: column;
+    gap: 0 ;
+    background-color: white;
+    border-radius: 30px;
+    margin-top: 16px;
+    height: 15px;
+ }
+ .list nav ul .secondlist ul {
+     visibility: hidden;
+ }
+ .list nav ul .secondlist:hover .movies {
+     visibility: visible;
+ }
+ .list nav ul .secondlist ul li {
+     background-color: white;
+     color: black;
+     margin: 0;
+     padding-top: 5px;
+     box-shadow: 0px 1px 1px black;
+     font-size: 13px;
+ }
+ .sliding .show {
+    margin-top: 8px;
+    width: 100%;
+    height: 280px;
+    background-image: url(arth.jpg);
+    background-size: 100%;
+    background-position-y: 50%;
+    animation-name: myslide;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-delay: 5s;
+ }
+ @keyframes myslide {
+    0% {
+        background-image: url(arth.jpg);
+    }
+    25% {
+        background-image: url(alchemy.jpg);
+    }
+    50%{
+        background-image: url(high.jpg);
+    }
+    75% {
+        background-image: url(goryeo.jpg);
+    }
+    100% {
+        background-image: url(dear.jpg);
+    }
+
+ }
+ .recent ul li{
+    margin-top: 5px;
+    display: inline-block;
+    background-color: #3ec2cf;
+    width: 115px;
+    height: 20px;
+    text-align: center;
+    font-size: 12px;
+    padding-top: 2.5px;
+    color: white;
+    cursor: pointer;
+ }
+ .recent ul .rec {
+    background-color: #fcc745;
+ }
+ .recent ul li:hover {
+    background-color: #fcc745;
+ }
+
+ .container .films {
+    position: relative;
+    width: 720px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    row-gap: 7px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-bottom: 35px;
+    margin-bottom: 5px;
+ }
+ .container {
+    display: flex;
+    justify-content: space-between;
+    
+ }
+ .film {
+    width: 173px;
+    height: 130px;
+    position: relative;
+ }
+ .film img {
+    width: 173px;
+    height: 130px;
+ }
+ .films .film .texts {
+    width: 100%;
+    height: 37%;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    bottom: 0px;
+    z-index: 1;
+    padding-left: 8px;
+ }
+
+ .films .film .texts :first-child {
+    color: white;
+    font-size: 13px;
+    position: absolute;
+    bottom: 15px;
+   overflow-y: visible;
+   width: 105px;
+
+ }
+ .films .film .texts :nth-child(2) {
+    color: white;
+    opacity: 0.8;
+    font-size: 11px;
+    position: absolute;
+   white-space: nowrap;
+   bottom: 0.1px;
+
+ }
+ .films .film .texts :last-child {
+    color: white;
+    background-color: #3ec2cf;
+    border-top-right-radius: 3px;
+    display: inline-block;
+    width: 50px;
+    font-size: 12px;
+    position: absolute;
+    bottom: 15px;
+    left: 127px;
+ }
+ .films .film .texts .Ep::after {
+    content: "";
+    position: absolute;
+    top: 90%;
+    left: 45px;
+    border-width: 3px;
+    border-style: solid;
+    border-color: #3ec2cf #3ec2cf #3ec2cf #3ec2cf;
+ }
+ .films .film:hover .title{
+    font-weight: bold;
+ }
+ .films .hh{
+    color: #3ec2cf;
+    font-size: 15px;
+    position: absolute;
+    top: 97%;
+    left: 89%;
+ }
+ 
+ .toleft {
+    float: right;
+    width: 240px;
+    margin-left: 5px;
+    margin-top: 5px;
+ }
+ .toleft .fol {
+    width: 100%;
+    border: 1px solid #ddd;
+    padding: 15px;
+    height: 115px;
+ }
+ .toleft .fol p {
+    font-size: 14px;
+    line-height: 25px;
+    border-bottom: 1px solid #ddd;
+ }
+ .toleft .fol p:hover {
+    color: #3ec2cf;
+ }
+ .cal {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    text-align: center;
+    column-gap: 1.2px;
+ }
+ .cal div {
+    background-color: #3ec2cf;
+    font-size: 14px;
+    color: white;
+    height: 23px;
+    padding-top: 3px;
+ }
+ .cal div:first-child {
+    background-color: #fcc745;
+ }
+.move {
+    margin-top: 10px;
+}
+.move .dramalist {
+    margin-bottom: 5px;
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 15px;
+    position: relative;
+}
+.dramalist img {
+    width: 70px;
+    height: 70px;
+    margin-left: 0;
+}
+.dramalist .info {
+    font-size: 14px;
+    width: 135px;
+}
+.dramalist .info .one {
+    cursor: pointer;
+    color: #3ec2cf;
+    padding: 0;
+}
+.dramalist .info .two {
+    font-size: 13px;
+    margin-top: 5px;
+}
+.dramalist .info .two span {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.ads {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 2px;
+}
+.ads a {
+    background-color: #3ec2cf;
+    font-size: 13px;
+    color: white;
+    text-align: center;
+    height: 23px;
+    padding-top: 2px;
+    cursor: pointer;
+}
+.ads a:first-child {
+    background-color: #fcc745;
+}
+.adsblock {
+    border: 1px solid #ddd;
+    margin-top: 2px;
+    padding: 10px;
+    display: flex;
+}
+.adsblock i {
+    color: #fcc745;
+}
+.adsblock p {
+    color: #3ec2cf;
+    margin-left: 5px;
+}
+.adsblock p::after {
+    content: "";
+    border-bottom: 1px solid #ddd;
+}
+.querytop {
+    background-color: #3ec2cf;
+    height: 35px;
+    
+    display: none;
+    
+}
+.querytop .srch {
+    position: relative;
+    margin-right: 10px;
+}
+.querytop .srch input {
+    width: 350px;
+    height: 22px;
+    padding-left: 70px;
+    border: 0;
+    outline: 0;
+}
+.srch .icon {
+    background-color: #fcc745;
+    position: absolute;
+    bottom: 0;
+    left: 325px;
+    width: 27px;
+    height: 22px;
+    text-align: center;
+}
+.srch .icon i {
+    margin-top: 4px;
+    color: white;
+}
+.srch select {
+    position: absolute;
+    top: 3px;
+    margin-left: 1px;
+    padding-left: 2px;
+    background-color: transparent;
+    box-shadow: 2px 2px 2px white ;
+    color: #3ec2cf;
+    border: 0;
+    outline: 0;
+}
+.menumenu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 10px;
+    color: white;
+    width: 140px;
+}
+.menumenu i {
+    font-size: 21px;
+    cursor: pointer;
+}
+@media screen and (max-width : 985px) {
+    .querytop {
+        display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    }
+    
+    .letters nav ul {
+        display: none;
+    }
+    .logosection {
+        display: none;
+    }
+    .list nav ul {
+        display: none;
+    }
+}
+
