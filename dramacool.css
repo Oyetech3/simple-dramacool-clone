@@ -202,10 +202,10 @@ input::placeholder {
     margin-top: 5px;
     display: inline-block;
     background-color: #3ec2cf;
-    width: 115px;
-    height: 20px;
+    width: 125px;
+    height: 30px;
     text-align: center;
-    font-size: 12px;
+    font-size: 15px;
     padding-top: 2.5px;
     color: white;
     cursor: pointer;
@@ -219,7 +219,7 @@ input::placeholder {
 
  .container .films {
     position: relative;
-    width: 720px;
+    width: 74vw;
     display: grid;
     grid-template-columns: auto auto auto auto;
     row-gap: 7px;
@@ -237,12 +237,12 @@ input::placeholder {
  }
  .film {
     width: 173px;
-    height: 130px;
+    height: 150px;
     position: relative;
  }
  .film img {
     width: 173px;
-    height: 130px;
+    height: 150px;
  }
  .films .film .texts {
     width: 100%;
@@ -281,7 +281,7 @@ input::placeholder {
     font-size: 12px;
     position: absolute;
     bottom: 15px;
-    left: 127px;
+    left:75%;
  }
  .films .film .texts .Ep::after {
     content: "";
@@ -305,7 +305,7 @@ input::placeholder {
  
  .toleft {
     float: right;
-    width: 240px;
+    width: 25%;
     margin-left: 5px;
     margin-top: 5px;
  }
@@ -479,5 +479,104 @@ input::placeholder {
     .list nav ul {
         display: none;
     }
+    .toleft {
+        display: none;
+    }
+    .container .films {
+        width: 100%;
+    }
+    .film {
+        width: 230px;
+        height: 180px;
+        position: relative;
+     }
+     .film img {
+        width: 230px;
+        height: 180px;
+     }
+     .films .film .texts :last-child {
+        left: 82%;
+        font-size: 13px;
+     }
+     .films .film .texts :first-child {
+        font-size: 15px;
+    
+     }
+     .films .film .texts :nth-child(2) {
+       font-size: 13px;
+    
+     }
+
+}
+@media screen and (max-width : 800px) {
+    .sliding .show {
+        display: none;
+    }
+}
+@media screen and (max-width : 725px) {
+    .container .films {
+        grid-template-columns: auto auto auto;
+    }
+    .search input {
+        width: 150px;
+    }
+    .film {
+        width: 310px;
+        height: 250px;
+        position: relative;
+     }
+     .film img {
+        width: 310px;
+        height: 250px;
+     }
+     .films .film .texts :last-child {
+        left: 87%;
+        font-size: 14px;
+     }
+     .films .film .texts :first-child {
+        font-size: 15px;
+    
+     }
+     .films .film .texts :nth-child(2) {
+       font-size: 13px;
+    
+     }
+     .films .film .texts :last-child {
+        font-size: 13px;
+     }
+}
+@media screen and (max-width : 480px) {
+    .container .films {
+        grid-template-columns: auto auto;
+        padding-left: 20px;
+        padding-top: 15px;
+    }
+    .film {
+        width: 455px;
+        height: 380px;
+        position: relative;
+     }
+     .film img {
+        width: 455px;
+        height: 380px;
+     }
+     .films .film .texts :last-child {
+        left: 87%;
+        font-size: 25px;
+        width: 80px;
+        height: 30px;
+     }
+     .films .film .texts :first-child {
+        font-size: 30px;
+        white-space: nowrap;
+     }
+     .films .film .texts :nth-child(2) {
+       font-size: 16px;
+     }
+     .films .film .texts .Ep::after {
+        top: 80%;
+        left: 64.5px;
+        border-width: 8px;
+     }
 }
 
